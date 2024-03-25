@@ -30,4 +30,27 @@ class Perulangan {
       x += 1;
     } while (x < 5);
   }
+
+  // Di Dart, for-in dan forEach adalah dua cara yang umum digunakan untuk melakukan iterasi atau pengulangan melalui elemen-elemen dalam sebuah collection seperti List, Set, atau Map.
+
+  // for-in Loop:
+  // Dengan for-in loop, Anda dapat mengulang melalui setiap elemen dalam sebuah collection. Ini adalah cara yang sederhana dan mudah dimengerti untuk melakukan iterasi.
+  void pengulanganForIn() {
+    var numbers = [1, 2, 3, 4, 5];
+    for (var number in numbers) {
+      print(number);
+    }
+  }
+  // 2. forEach Method:
+  // forEach adalah method yang tersedia pada collection di Dart. Method ini menerima sebuah fungsi (atau lambda) yang akan dieksekusi untuk setiap elemen dalam collection tersebut.
+
+  void pengulanganForEach() {
+    var numbers = [1, 2, 3, 4, 5];
+    numbers.forEach((number) {
+      print(number);
+    });
+  }
+  // Perbedaan utama antara for-in loop dan forEach method adalah sintaks dan cara penulisan kode. for-in loop lebih mirip dengan pengulangan tradisional, sementara forEach method lebih dekat dengan pemrograman fungsional dengan menggunakan fungsi lambda.
+
+  // Pemilihan antara for-in dan forEach biasanya tergantung pada preferensi pribadi dan kebutuhan spesifik dalam kode Anda. Namun, keduanya dapat digunakan dengan mudah untuk melakukan iterasi melalui collection dalam Dart.
 }
