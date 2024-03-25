@@ -1,9 +1,9 @@
 // Learning Variable
 
 class Variable {
-// Tipe Data Primitif: Tipe data primitif adalah tipe data yang menyimpan nilai tunggal.
-// Mereka direpresentasikan secara langsung oleh nilai sebenarnya dan tidak memiliki metode atau properti tambahan.
-// Dart memiliki beberapa tipe data primitif standar, antara lain:
+  // Tipe Data Primitif: Tipe data primitif adalah tipe data yang menyimpan nilai tunggal.
+  // Mereka direpresentasikan secara langsung oleh nilai sebenarnya dan tidak memiliki metode atau properti tambahan.
+  // Dart memiliki beberapa tipe data primitif standar, antara lain:
 
   int number = 20; // untuk menyimpan bilangan bulat.
   double decimal = 20.2; // untuk menyimpan bilangan pecahan.
