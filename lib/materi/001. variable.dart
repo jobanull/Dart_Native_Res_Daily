@@ -12,7 +12,8 @@ class Variable {
   num nums = 10; //menyimpan nilai numerik, baik itu bil bulat atau pecahan.
 
   // Tipe data non-primitif (atau tipe data objek) adalah tipe data yang dapat menyimpan kumpulan nilai atau objek,
-  // dan mereka memiliki metode dan properti yang terkait. Dart adalah bahasa pemrograman yang berbasis objek,
+  // dan mereka memiliki metode dan properti yang terkait.
+  // Dart adalah bahasa pemrograman yang berbasis objek,
   // yang berarti hampir semua tipe data dalam Dart adalah tipe data objek.
   // Beberapa tipe data non-primitif yang umum digunakan dalam Dart adalah:
 
