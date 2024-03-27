@@ -1,4 +1,4 @@
-// nheritance (warisan) adalah konsep yang memungkinkan sebuah class (kelas anak) untuk mewarisi sifat-sifat (properti dan metode) dari class lain yang sudah ada (kelas induk atau super class).
+// Inheritance (warisan) adalah konsep yang memungkinkan sebuah class (kelas anak) untuk mewarisi sifat-sifat (properti dan metode) dari class lain yang sudah ada (kelas induk atau super class).
 // Ketika sebuah class mewarisi dari class lain, ia dapat mengakses properti dan metode yang didefinisikan dalam class tersebut. Dart menyediakan tiga kata kunci yang berkaitan dengan inheritance: extends, is, dan as, yang digunakan dalam berbagai konteks seperti berikut
 
 // extends: Kata kunci extends digunakan untuk membuat class turunan atau subclass yang mewarisi semua properti dan metode dari superclass atau class induk.

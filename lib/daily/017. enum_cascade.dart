@@ -1,1 +1,2 @@
-
+// Enum 
+// Casecade Notation : 

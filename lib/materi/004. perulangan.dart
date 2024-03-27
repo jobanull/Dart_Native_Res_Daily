@@ -1,9 +1,9 @@
 // Pengulangan adalah proses di mana sebuah blok kode dieksekusi berulang kali sesuai dengan kondisi yang ditentukan.
 // Pengulangan sangat penting dalam pemrograman karena memungkinkan kita untuk mengeksekusi serangkaian pernyataan atau operasi secara berulang tanpa harus menulis kode yang sama berulang kali.
 
-class Perulangan {
+class Looping {
   void pengulanganFor() {
-    // Pengulangan For, 5x
+    // For :  Ini adalah struktur pengulangan yang digunakan untuk mengulangi serangkaian pernyataan berdasarkan kondisi atau iterasi. Dalam Dart, loop for terdiri dari tiga bagian: inisialisasi, kondisi, dan pembaruan.
     for (int counter = 0; counter < 5; counter = counter + 1) {
       print("Halo World");
     }
@@ -14,7 +14,7 @@ class Perulangan {
   }
 
   void pengulanganWhile() {
-    // Pengulangan While
+    // While : Ini adalah struktur pengulangan yang digunakan untuk mengulangi serangkaian pernyataan selama kondisi tertentu benar.
     int i = 0;
     while (i < 5) {
       print("Halo ke " + i.toString());
@@ -23,7 +23,7 @@ class Perulangan {
   }
 
   void pengulanganDoWhile() {
-    // Pengulagnan Do WHile
+    // Do WHile : Ini adalah struktur pengulangan yang mirip dengan while, namun pernyataan di dalam blok do akan dieksekusi setidaknya sekali, bahkan jika kondisi awalnya salah.
     int x = 0;
     do {
       print("do do do do ke " + x.toString());
@@ -34,7 +34,7 @@ class Perulangan {
   // Di Dart, for-in dan forEach adalah dua cara yang umum digunakan untuk melakukan iterasi atau pengulangan melalui elemen-elemen dalam sebuah collection seperti List, Set, atau Map.
 
   // for-in Loop:
-  // Dengan for-in loop, Anda dapat mengulang melalui setiap elemen dalam sebuah collection. Ini adalah cara yang sederhana dan mudah dimengerti untuk melakukan iterasi.
+  // Ini adalah struktur pengulangan yang digunakan untuk mengulangi elemen-elemen dari sebuah iterable object seperti list atau set.
   void pengulanganForIn() {
     var numbers = [1, 2, 3, 4, 5];
     for (var number in numbers) {
@@ -42,7 +42,7 @@ class Perulangan {
     }
   }
   // 2. forEach Method:
-  // forEach adalah method yang tersedia pada collection di Dart. Method ini menerima sebuah fungsi (atau lambda) yang akan dieksekusi untuk setiap elemen dalam collection tersebut.
+  // Ini adalah cara lain untuk mengulangi elemen-elemen dari sebuah iterable object, tetapi lebih pendek dari for in. Ini juga sering digunakan untuk memanggil fungsi callback untuk setiap elemen.
 
   void pengulanganForEach() {
     var numbers = [1, 2, 3, 4, 5];
