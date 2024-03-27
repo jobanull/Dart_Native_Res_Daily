@@ -1,6 +1,6 @@
 import 'dart:io';
 
-class Pengkondisian {
+class Condition {
 // Pengkondisian adalah proses di mana sebuah program memilih tindakan atau jalur eksekusi berdasarkan kondisi yang ditentukan.
 // Dengan pengkondisian, program dapat melakukan perbandingan nilai atau mengevaluasi ekspresi untuk menentukan tindakan yang tepat untuk diambil.
 

@@ -10,44 +10,40 @@
 // ignore_for_file: unnecessary_null_comparison
 
 class Functions {
-  // return function
-  double luas_segiempat(double panjang, double lebar) {
-    return panjang * lebar;
+  // Return Function :
+  // Ini adalah fungsi yang mengembalikan nilai. Dalam Dart, setiap fungsi yang tidak memiliki tipe khusus yang dideklarasikan secara eksplisit akan mengembalikan dynamic secara default.
+  int add(int a, int b) {
+    return a + b;
   }
 
-  // void function
-  void sapa_penonton() {
-    print("Hallo Penonton");
+  // Void Function: Ini adalah fungsi yang tidak mengembalikan nilai (void artinya kosong). Biasanya digunakan untuk melakukan tugas-tugas yang tidak perlu mengembalikan nilai.
+  void greet(String name) {
+    print('Hello, $name!');
   }
 
-  // Named Parameter
+  // Named Function: Ini adalah fungsi yang dideklarasikan dengan nama tertentu. Anda dapat memanggilnya berulang kali menggunakan nama tersebut.
   String NamedParameter(String from, String message,
       {required String to, required String appName}) {
     return "$from say $message${(to != null) ? " to $to" : " "}${(appName != null) ? " via $appName" : ""}";
   }
 
-  // Optional Parameter
+  // Optional Parameter : Ini merujuk pada parameter fungsi yang bersifat opsional. Dalam Dart, parameter opsional dapat dilakukan dengan menambahkan tanda kurung kotak [] di sekitar parameter yang diinginkan.
   String OptionalParameter(String from, String message,
       {required String to, required String appName}) {
     return "$from say $message${(to != null) ? " to " + to : " "}${(appName != null) ? " via " + appName : ""}";
   }
 
-  // Default Parameter
+  // Default Function: Ini adalah fungsi yang memiliki nilai default untuk satu atau lebih parameter. Ini memungkinkan pemanggilan fungsi tanpa memberikan nilai untuk parameter-parameter tersebut.
   String DefaultParameter(String from, String message,
       [String? to, String appName = "Whatsapp"]) {
     return "$from say $message${(to != null) ? " to $to" : " "}${(appName != null) ? " via " + appName : ""}";
   }
 
-  // Lambda Expression
+  // Lambda Function: Ini adalah cara singkat untuk mendefinisikan fungsi anonim dalam satu baris. Ini juga dikenal sebagai fungsi anonim.
   double luas_segiempat2(double panjang, double lebar) => panjang * lebar;
 
-  // Anonymous Function
+  // Anonymous Function: Ini adalah fungsi tanpa nama yang bisa dibuat di dalam kode, biasanya digunakan sebagai parameter untuk fungsi lain.
   int doMathOperator(int number1, int number2, Function(int, int) operator) {
     return operator(number1, number2);
-  }
-
-  // Return Function Default Parameter
-  String salam2([String nama = "Muji", String waktu = "Malam"]) {
-    return "Selamat $waktu, $nama";
   }
 }

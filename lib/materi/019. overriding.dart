@@ -10,8 +10,6 @@
 // [] : operator []
 // Contoh:
 
-// dart
-// Copy code
 // class Vector {
 //   int x, y;
 
