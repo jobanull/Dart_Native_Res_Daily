@@ -1,6 +1,6 @@
 class Functions {
   // Fungsi :
-  //   Return Function
+  // Return Function
   // Void Function
   // Named Function
   // Optional Function
