@@ -1,21 +1,36 @@
 class Operator {
-  // Penjelasan Operator
+  // Penjelasan Operator : digunakan untuk melakukan operasi seperti +,-,*,/
 
   void aritmatika()
-  // Operator Aritmatika
-  {}
+  // Operator Aritmatika : melakukan operasi matematika
+  {
+    var hasil = 10 + 2;
+    hasil - 20;
+    print(hasil);
+  }
 
   void penugasan()
-  // Operator Penugasan
-  {}
+  // Operator Penugasan : menetapkan nilai ke variable
+  {
+    var hasil = 10;
+    hasil += 20;
+    print(hasil);
+  }
 
   void perbandingan()
-  // Operator Perbandingan
-  {}
+  // Operator Perbandingan : membandingkan dua nilai
+  {
+    var hasil = 12 > 10;
+    print(hasil);
+  }
 
   void logika()
-  // Operator Logika
-  {}
+  // Operator Logika : mengkombinasikan nilai-nilai kebenaran
+  {
+    var logika;
+    logika = 2 < 7 && 10 > 8;
+    print(logika);
+  }
 
   void increment()
   // Operator Increment
