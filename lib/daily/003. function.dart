@@ -8,41 +8,37 @@
 // Body / badan fungsi :
 
 class Functions {
+
   // Return Function :
-  int returnFunction(int a, int b) {
-    return a + b;
+  int returnFunction() {
+    return 0
   }
 
   // Void Function :
-  void voidFunction(String name) {
-    print('Hello, $name!');
+  void voidFunction() {
+    print("");
   }
 
   // Named Function :
-  String NamedParameter(String from, String message,
-      {required String to, required String appName}) {
-    return "$from say $message${(to != null) ? " to $to" : " "}${(appName != null) ? " via $appName" : ""}";
+  String NamedParameter() {
+    return "";
   }
 
   // Optional Parameter :
-  String optionalParameter(String name, [int? age]) {
-    if (age != null) {
-      return "My name is $name, i was $age years old";
-    } else {
-      return "My name $name";
-    }
+  String optionalParameter() {
+    return "";
   }
 
   // Default Function :
-  String defaultFunction({String name = "Joban"}) {
-    return "Hallo $name";
+  String defaultFunction() {
+    return "";
   }
 
   // Lambda Function :
-  double luasSegiempat(double panjang, double lebar) => panjang * lebar;
+  double luasSegiempat() => 1;
 
   // Anonymous Functio :
-  int doMathOperator(int number1, int number2, Function(int, int) operator) {
-    return operator(number1, number2);
+  int doMathOperator() {
+    return 1;
   }
 }

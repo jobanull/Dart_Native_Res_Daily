@@ -1,6 +1,7 @@
 // Learning Variable
 
 class Variable {
+
   // Tipe Data Primitif:
 
   void dataPrimitif() {
@@ -37,4 +38,5 @@ class Variable {
   void displayInfo() {
     // print('Name: $name, Age: $age');
   }
+
 }
