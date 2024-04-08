@@ -1,54 +1,71 @@
 class Operator {
-  // Penjelasan Operator : digunakan untuk melakukan operasi seperti +,-,*,/
 
-  void aritmatika()
-  // Operator Aritmatika : melakukan operasi matematika
-  {
-    var hasil = 10 + 2;
-    hasil - 20;
-    print(hasil);
+// Operator :
+// Operator Aritmatika :
+  void aritmatika() {
+    var penjumlahan;
+    var pengurangan;
+    var perkalian;
+    var pembagian;
+    var modulo;
+    print("$penjumlahan, $pengurangan, $perkalian, $pembagian, $modulo");
   }
 
-  void penugasan()
-  // Operator Penugasan : menetapkan nilai ke variable
-  {
-    var hasil = 10;
-    hasil += 20;
-    print(hasil);
+// Operator Penugasan / Assignment :
+  void pengugasan() {
+    // += :
+    // -= :
+    // *= :
+    // /= :
+    // %= :
+    int angka = 2;
+    print(angka);
   }
 
-  void perbandingan()
-  // Operator Perbandingan : membandingkan dua nilai
-  {
-    var hasil = 12 > 10;
-    print(hasil);
+// Operator Perbandingan :
+  void perbandingan() {
+    // ==, !=, >, <, >=, <=
+    bool perbandingan = 12 == 10 + 3;
+    print(perbandingan);
   }
 
-  void logika()
-  // Operator Logika : mengkombinasikan nilai-nilai kebenaran
-  {
+// Operator Logika:
+  void logika() {
+    // && (AND logika)
+    // || (OR logika)
+    // ! (NOT logika)
     var logika;
-    logika = 2 < 7 && 10 > 8;
+    logika = 2 < 7 && 3 < 6;
     print(logika);
   }
 
-  void increment()
-  // Operator Increment
-  {}
+// Operator Increment dan Decrement:
+  // ++ (increment)
+  void inc() {
+    var a = 1;
+    a++;
+    print(a);
+  }
 
-  void decrement()
-  // Operator Decrement
-  {}
+  // -- (decrement)
+  void dec() {
+    var a = 5;
+    a--;
+    print(a);
+  }
 
-  void ternary()
-  // Operator Ternary
-  {}
+// Operator Ternary:
+  void ternary() {
+    var isTrue = false;
+    var result = (isTrue) ? "Benar" : "Salah";
+    print(result);
+  }
 
-  void bitwise()
-  // Operator Bitwise
-  {}
-
-  void access()
-  // Operator Member Access
-  {}
+// Operator Member Access:
+  // . (dot)
+  // ?. (safe navigation)
+  void memAccess() {
+    String? name;
+    print(name?.contains("Joban"));
+  }
 }

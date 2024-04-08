@@ -1,9 +1,12 @@
-// Pengulangan adalah proses di mana sebuah blok kode dieksekusi berulang kali sesuai dengan kondisi yang ditentukan.
-// Pengulangan sangat penting dalam pemrograman karena memungkinkan kita untuk mengeksekusi serangkaian pernyataan atau operasi secara berulang tanpa harus menulis kode yang sama berulang kali.
-
 class Looping {
+  // Pengulangan : adalah proses di mana sebuah blok kode dieksekusi berulang kali sesuai dengan kondisi yang ditentukan.
+
   void pengulanganFor() {
-    // For :  Ini adalah struktur pengulangan yang digunakan untuk mengulangi serangkaian pernyataan berdasarkan kondisi atau iterasi. Dalam Dart, loop for terdiri dari tiga bagian: inisialisasi, kondisi, dan pembaruan.
+    // For :
+    // Pengertian : Digunakan untuk melakukan iterasi sejumlah tertentu berdasarkan kondisi yang diberikan.
+    // Cara : Melibatkan inisialisasi, kondisi, dan ekspresi iterasi.
+    // Cocok untuk : Cocok digunakan jika jumlah iterasi sudah diketahui sebelumnya.
+
     for (int counter = 0; counter < 5; counter = counter + 1) {
       print("Halo World");
     }
@@ -14,7 +17,10 @@ class Looping {
   }
 
   void pengulanganWhile() {
-    // While : Ini adalah struktur pengulangan yang digunakan untuk mengulangi serangkaian pernyataan selama kondisi tertentu benar.
+    // While :
+    // Pengertian : Digunakan untuk melakukan iterasi selama kondisi yang diberikan bernilai true.
+    // Cara : Kondisi diperiksa sebelum iterasi dimulai.
+    // Cocok untuk : Cocok digunakan ketika jumlah iterasi tidak diketahui sebelumnya dan kondisi iterasi ditentukan sebelumnya.
     int i = 0;
     while (i < 5) {
       print("Halo ke " + i.toString());
@@ -23,7 +29,10 @@ class Looping {
   }
 
   void pengulanganDoWhile() {
-    // Do WHile : Ini adalah struktur pengulangan yang mirip dengan while, namun pernyataan di dalam blok do akan dieksekusi setidaknya sekali, bahkan jika kondisi awalnya salah.
+    // Do WHile :
+    // Pengertian : Mirip dengan while, tetapi pernyataan iterasi dieksekusi setidaknya satu kali sebelum kondisi diperiksa.
+    // Cara : Kondisi diperiksa setelah satu iterasi pertama selesai.
+    // Cocok untuk : Cocok digunakan ketika Anda ingin menjalankan iterasi minimal satu kali.
     int x = 0;
     do {
       print("do do do do ke " + x.toString());
@@ -31,10 +40,15 @@ class Looping {
     } while (x < 5);
   }
 
-  // Di Dart, for-in dan forEach adalah dua cara yang umum digunakan untuk melakukan iterasi atau pengulangan melalui elemen-elemen dalam sebuah collection seperti List, Set, atau Map.
+  // for-in dan forEach :  adalah dua cara yang umum digunakan untuk melakukan iterasi atau pengulangan melalui elemen-elemen dalam sebuah collection seperti List, Set, atau Map.
+  // Perbedaannya : adalah sintaks dan cara penulisan kode. for-in loop lebih mirip dengan pengulangan tradisional, sementara forEach method lebih dekat dengan pemrograman fungsional dengan menggunakan fungsi lambda.
+  // For in :
+  // For Each :
 
   // for-in Loop:
-  // Ini adalah struktur pengulangan yang digunakan untuk mengulangi elemen-elemen dari sebuah iterable object seperti list atau set.
+  // Pengertian : Digunakan untuk mengulangi elemen-elemen dari sebuah iterable object seperti list atau set.
+  // Cara : Iterasi dilakukan untuk setiap elemen dalam koleksi.
+  // Cocok untuk : Cocok digunakan ketika Anda ingin mengakses setiap elemen dalam koleksi tanpa memerlukan variabel penghitung iterasi.
   void pengulanganForIn() {
     var numbers = [1, 2, 3, 4, 5];
     for (var number in numbers) {
@@ -42,7 +56,9 @@ class Looping {
     }
   }
   // 2. forEach Method:
-  // Ini adalah cara lain untuk mengulangi elemen-elemen dari sebuah iterable object, tetapi lebih pendek dari for in. Ini juga sering digunakan untuk memanggil fungsi callback untuk setiap elemen.
+  // Pengertian : Sama dengan for-in, tetapi lebih pendek dan ekspresif.
+  // Cara : Biasanya digunakan untuk memanggil fungsi callback atau metode untuk setiap elemen dalam koleksi.
+  // Cocok untuk : Cocok digunakan untuk mengiterasi koleksi dan melakukan tugas pada setiap elemennya dengan sintaks yang lebih ringkas.
 
   void pengulanganForEach() {
     var numbers = [1, 2, 3, 4, 5];
@@ -50,7 +66,4 @@ class Looping {
       print(number);
     });
   }
-  // Perbedaan utama antara for-in loop dan forEach method adalah sintaks dan cara penulisan kode. for-in loop lebih mirip dengan pengulangan tradisional, sementara forEach method lebih dekat dengan pemrograman fungsional dengan menggunakan fungsi lambda.
-
-  // Pemilihan antara for-in dan forEach biasanya tergantung pada preferensi pribadi dan kebutuhan spesifik dalam kode Anda. Namun, keduanya dapat digunakan dengan mudah untuk melakukan iterasi melalui collection dalam Dart.
 }
