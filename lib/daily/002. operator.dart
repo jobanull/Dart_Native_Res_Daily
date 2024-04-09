@@ -1,3 +1,5 @@
+// ignore_for_file: dead_code
+
 class Operator {
 // Operator, Pengertian :
 // Operator Aritmatika, Pengertian :
@@ -67,4 +69,16 @@ class Operator {
     String? name;
     print(name?.contains("Joban"));
   }
+}
+
+void main() {
+  var operator = Operator();
+  operator.aritmatika();
+  operator.pengugasan();
+  operator.perbandingan();
+  operator.logika();
+  operator.inc();
+  operator.dec();
+  operator.ternary();
+  operator.memAccess();
 }

@@ -3,3 +3,5 @@
 // Karakteristik :
 
 class Underscode {}
+
+void main() {}

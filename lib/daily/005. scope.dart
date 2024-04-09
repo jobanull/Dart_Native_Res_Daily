@@ -31,3 +31,10 @@ class Scope {
   // Karakteristik :
   void blockScope() {}
 }
+
+void main() {
+  var scope = Scope();
+  scope.myMethod();
+  scope.globalScope();
+  scope.localScope();
+}
