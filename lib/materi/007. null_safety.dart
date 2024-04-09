@@ -1,4 +1,4 @@
-// ignore_for_file: dead_code
+// ignore_for_file: dead_code, unused_local_variable
 
 // Null safety : Fitur yang bertujuan untuk mengurangi risiko bug yang disebabkan oleh nilai null / ketiadaan nilai.
 

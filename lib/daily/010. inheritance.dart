@@ -7,6 +7,8 @@
 // Override.
 // Pengertian :
 
+// ignore_for_file: unused_local_variable
+
 // Contoh Interitance
 class Extends {
   void superClassIdentity() {
@@ -43,7 +45,13 @@ class Is {
 
 class As {
   Extends ext = Child();
-  void main() {
+  void aS() {
     (ext as Child).childIdentity();
   }
+}
+
+void main() {
+  var inheritance = Extends();
+  var aS = As();
+  var iS = Is();
 }

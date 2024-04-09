@@ -37,3 +37,12 @@ class Looping {
     // Cocok untuk :
   }
 }
+
+void main() {
+  var loop = Looping();
+  loop.pengulanganFor();
+  loop.pengulanganWhile();
+  loop.pengulanganDoWhile();
+  loop.pengulanganForIn();
+  loop.pengulanganForEach();
+}

@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable, unused_import
+
 import 'dart:io';
 
 class Condition {
@@ -39,4 +41,12 @@ class Condition {
     // Buat rule jika bula = 1 maka januari, 2 = feb
     int bulan = 1;
   }
+}
+
+void main() {
+  var con = Condition();
+  con.pengkondisianIfElse();
+  con.pengkondisianIfElseIf();
+  con.pengkondisianTernary();
+  con.pengkondisianSwitch();
 }
