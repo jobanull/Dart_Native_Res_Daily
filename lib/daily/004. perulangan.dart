@@ -2,29 +2,27 @@ class Looping {
   // Pengulangan :
 
   void pengulanganFor() {
-    // For :
     // Pengertian :
     // Cara :
     // Cocok untuk :
   }
 
   void pengulanganWhile() {
-    // While :
     // Pengertian :
     // Cara :
     // Cocok untuk :
   }
 
   void pengulanganDoWhile() {
-    // Do WHile :
     // Pengertian :
     // Cara :
     // Cocok untuk :
   }
 
-  // for-in dan forEach :
-  // Perbedaannya :
-  // For in :
+  // for-in dan forEach.
+  // Pengertian :
+  // Perbedaannya.
+  // For In :
   // For Each :
 
   void pengulanganForIn() {

@@ -1,6 +1,7 @@
 // ignore_for_file: unnecessary_null_comparison
 
-// Fungsi :
+// Fungsi.
+// Pengertian :
 
 // Fungsi biasanya memiliki tiga komponen utama:
 // Nama Fungsi:
@@ -8,10 +9,9 @@
 // Body / badan fungsi :
 
 class Functions {
-
   // Return Function :
   int returnFunction() {
-    return 0
+    return 0;
   }
 
   // Void Function :

@@ -1,11 +1,18 @@
-class NullSafety {
-  // NullSafety
+// ignore_for_file: dead_code
 
-  void nullSafety() {
-    // Nullability pada Variabel:
-    // Null-aware Operators:
-    // Non-nullable by Default:
-    // Late Variable Initialization:
-    // Null Safety pada Collection:
-  }
+// Null safety :
+
+class NullSafetys {
+  //  Nullable Types :
+
+  void nullableType() {}
+
+  // Non-nullable Types :
+  void nonNullable() {}
+
+  // Late Variables :
+  void lateVariable() {}
+
+  // Null-aware Operators :
+  void nullaware() {}
 }

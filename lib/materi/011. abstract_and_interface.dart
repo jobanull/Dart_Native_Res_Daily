@@ -1,36 +1,31 @@
-// Di Dart, baik abstract class maupun interface adalah cara untuk mendefinisikan kontrak atau blueprint untuk sebuah class. Mereka memberikan struktur yang harus diikuti oleh class-class yang mengimplementasikannya. Namun, ada perbedaan utama antara keduanya:
+// Abstract Class.
+// Pengertian : kelas yang tidak dapat diinstansiasi secara langsung, tetapi bisa digunakan sebagai kerangka kerja untuk kelas turunannya.
+// Krakteristik : Kelas abstrak biasanya berisi metode-metode tanpa implementasi yang harus diimplementasikan oleh kelas turunannya.
 
-// Abstract Class:
-// Abstract Method: Abstract class dapat memiliki method yang dideklarasikan tanpa implementasi.
-// Method-method ini disebut abstract method dan harus diimplementasikan oleh class turunan.
-
-abstract class Animal {
-  void eat(); // Abstract method
+abstract class Shape {
+  // Metode abstrak tanpa implementasi
+  void draw();
 }
 
-class Dog extends Animal {
-  void eat() {
-    print('Dog is eating');
+// Kelas turunan dari kelas abstrak Shape
+class Circle extends Shape {
+  // Implementasi metode draw dari kelas Shape
+  void draw() {
+    print('Menggambar lingkaran');
   }
 }
-// Non-Abstract Method: Abstract class juga dapat memiliki method yang memiliki implementasi (non-abstract method).
-// Class turunan dapat menggunakan method-method ini tanpa perlu mengimplementasikan ulang.
 
+// Non-Abstract Method.
+// Pengertian :  Abstract class juga dapat memiliki method yang memiliki implementasi (non-abstract method).
 abstract class Animals {
-  void eat(); // Abstract method
-
   void makeSound() {
     print('Animal is making a sound');
   }
 }
 
-// Tidak Dapat Diinstansiasi: Anda tidak dapat membuat objek dari abstract class.
-// Namun, Anda dapat membuat referensi dari abstract class tersebut dan menggunakan class turunan untuk menginstansiasi objek.
-Animal animal = Dog();
-
-// Interface:
-// Semua Metode Abstract: Interface hanya dapat memiliki method-method yang dideklarasikan tanpa implementasi (semua method adalah abstract).
-// Class yang mengimplementasikan interface harus mengimplementasikan semua method yang dideklarasikan dalam interface tersebut.
+// Interface.
+// Pengertian : Interface mendefinisikan sekumpulan metode dan properti yang harus diimplementasikan oleh kelas-kelas lain yang menggunakan interface tersebut.
+// Karakteristik : Tidak ada kata kunci khusus untuk mendeklarasikan sebuah interface seperti yang ada di beberapa bahasa pemrograman lainnya. Namun, Anda dapat membuat sebuah abstract class yang memiliki semua metode abstrak sehingga mirip dengan sebuah interface.
 
 abstract class CanEat {
   void eat(); // Abstract method

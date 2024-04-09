@@ -1,8 +1,8 @@
 // Kata kunci static dalam Dart digunakan untuk mendefinisikan variabel atau metode yang terkait dengan class itu sendiri, bukan dengan instance kelas. Dengan menggunakan static, Anda dapat mengakses variabel atau metode tanpa harus membuat instance dari kelas tersebut.
 
-// Berikut adalah beberapa poin penting tentang penggunaan static dalam Dart:
+// Berikut adalah beberapa poin penting tentang penggunaan static dalam Dart :
 
-// Variabel Statis: Variabel statis adalah variabel yang terkait dengan class, bukan dengan instance kelas. Mereka hanya ada satu salinan dari variabel statis, terlepas dari berapa banyak instance kelas yang Anda buat.
+// Variabel Statis : Variabel statis adalah variabel yang terkait dengan class, bukan dengan instance kelas. Mereka hanya ada satu salinan dari variabel statis, terlepas dari berapa banyak instance kelas yang Anda buat.
 
 class MyClass {
   static int count = 0; // Variabel statis

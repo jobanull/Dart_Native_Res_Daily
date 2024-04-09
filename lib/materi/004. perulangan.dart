@@ -41,9 +41,9 @@ class Looping {
   }
 
   // for-in dan forEach :  adalah dua cara yang umum digunakan untuk melakukan iterasi atau pengulangan melalui elemen-elemen dalam sebuah collection seperti List, Set, atau Map.
-  // Perbedaannya : adalah sintaks dan cara penulisan kode. for-in loop lebih mirip dengan pengulangan tradisional, sementara forEach method lebih dekat dengan pemrograman fungsional dengan menggunakan fungsi lambda.
-  // For in :
-  // For Each :
+  // Perbedaannya :
+  // For in : for-in loop lebih mirip dengan pengulangan tradisional
+  // For Each : forEach method lebih dekat dengan pemrograman fungsional dengan menggunakan fungsi lambda.
 
   // for-in Loop:
   // Pengertian : Digunakan untuk mengulangi elemen-elemen dari sebuah iterable object seperti list atau set.
