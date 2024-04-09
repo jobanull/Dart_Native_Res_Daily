@@ -1,2 +1,5 @@
+// Underscode.
+// Pengertian :
+// Karakteristik :
 
-// Padameter Underscode : 
+class Underscode {}

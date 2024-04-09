@@ -1,7 +1,7 @@
-// Enkapsulasi merupakan suatu metode dalam paradigma oop untuk membatasi akses pada atribut / field pada sebuah class
-// yang bertujuan untuk menjamin keamanan data agar tidak mengalami perubahan akibat akses langsung atau kesalahan yang tidak disengaja/
+// Enkapsulasi : merupakan suatu metode dalam paradigma oop untuk membatasi akses pada atribut / field pada sebuah class
+// yang bertujuan untuk menjamin keamanan data agar tidak mengalami perubahan akibat akses langsung atau kesalahan yang tidak disengaja
 
-class PersegiPanjang {
+class Encapsulation {
   double? _panjang;
   double? _lebar;
 

@@ -1,7 +1,6 @@
 class Operator {
-
-// Operator :
-// Operator Aritmatika :
+// Operator, Pengertian :
+// Operator Aritmatika, Pengertian :
   void aritmatika() {
     var penjumlahan;
     var pengurangan;
@@ -11,7 +10,7 @@ class Operator {
     print("$penjumlahan, $pengurangan, $perkalian, $pembagian, $modulo");
   }
 
-// Operator Penugasan / Assignment :
+// Operator Penugasan / Assignment, Pengertian :
   void pengugasan() {
     // += :
     // -= :
@@ -22,14 +21,14 @@ class Operator {
     print(angka);
   }
 
-// Operator Perbandingan :
+// Operator Perbandingan, Pengertian :
   void perbandingan() {
     // ==, !=, >, <, >=, <=
     bool perbandingan = 12 == 10 + 3;
     print(perbandingan);
   }
 
-// Operator Logika:
+// Operator Logika, Pengertian:
   void logika() {
     // && (AND logika)
     // || (OR logika)
@@ -39,7 +38,7 @@ class Operator {
     print(logika);
   }
 
-// Operator Increment dan Decrement:
+// Operator Increment dan Decrement, Pengertian:
   // ++ (increment)
   void inc() {
     var a = 1;
@@ -54,14 +53,14 @@ class Operator {
     print(a);
   }
 
-// Operator Ternary:
+// Operator Ternary, Pengertian:
   void ternary() {
     var isTrue = false;
     var result = (isTrue) ? "Benar" : "Salah";
     print(result);
   }
 
-// Operator Member Access:
+// Operator Member Access, Pengertian:
   // . (dot)
   // ?. (safe navigation)
   void memAccess() {

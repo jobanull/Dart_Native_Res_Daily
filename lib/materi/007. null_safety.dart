@@ -1,33 +1,39 @@
-// Null safety adalah fitur dalam Dart yang bertujuan untuk mengurangi risiko bug yang disebabkan oleh nilai null.
-// Dart memiliki konsep yang disebut "null" yang digunakan untuk menunjukkan ketiadaan nilai.
-// Dengan null safety, Dart memperkenalkan beberapa perubahan dalam cara variabel diperlakukan, sehingga mengurangi kemungkinan terjadinya kesalahan yang terkait dengan nilai null.
+// ignore_for_file: dead_code
 
-class NullSafety {
-  String a = 'a';
-  void nullSafety() {
-    // Nullability pada Variabel:
-    // Dengan null safety, setiap variabel memiliki nullability yang didefinisikan.
-    // Variabel yang dapat menerima nilai null harus dideklarasikan dengan tanda tanya (?), sedangkan variabel yang tidak dapat menerima nilai null harus dideklarasikan tanpa tanda tanya.
-    int? nullableValue = null; // Variabel dapat menerima nilai null
-    int nonNullableValue = 10; // Variabel tidak dapat menerima nilai null
+// Null safety : Fitur yang bertujuan untuk mengurangi risiko bug yang disebabkan oleh nilai null / ketiadaan nilai.
 
-    // Null-aware Operators:
-    // Dart menyediakan operator-null aware seperti ?. dan ?? yang memungkinkan Anda untuk bekerja dengan nilai null secara aman dan efisien.
-    int? length = nullableValue
-        ?.bitLength; // Mengakses properti length jika nullableValue tidak null
-    int value = nullableValue ??
-        0; // Menggunakan nilai default 0 jika nullableValue null
+class NullSafetys {
+  //  Nullable Types: Dalam Dart null safety, semua tipe data dianggap non-nullable secara default, yang berarti mereka tidak dapat memiliki nilai null kecuali jika secara eksplisit dideklarasikan sebagai nullable. Tipe nullable dinyatakan dengan menambahkan tanda tanya (?) setelah tipe data
+
+  void nullableType() {
+    int? nullableInt;
+    // nullableInt dapat berisi nilai int atau null
+    String nonNullableString = "Hello";
+    // nonNullableString tidak dapat berisi null secara default
+    String? nullableString;
+    // nullableString dapat berisi nilai string atau null
   }
 
-  // Non-nullable by Default: Dengan null safety,
-  // Dart menganggap semua variabel non-nullable secara default, kecuali dinyatakan sebaliknya.
-  // Ini membantu dalam mencegah kesalahan terkait dengan nilai null.
+  // Non-nullable Types: Tipe data non-nullable harus selalu memiliki nilai yang valid dan tidak dapat berisi null, kecuali jika jenisnya adalah union dari jenis non-nullable dan nullable.
+  void nonNullable() {
+    int nonNullableInt = 10; // nonNullableInt tidak dapat berisi null
+  }
 
-  // Late Variable Initialization:
-  // Dart memperkenalkan kata kunci late yang memungkinkan Anda mendeklarasikan variabel yang diinisialisasi nanti dalam siklus hidup program, tetapi pasti diinisialisasi sebelum digunakan.
-  late int lateValue;
+  // Late Variables: Variabel "late" adalah variabel non-nullable yang tidak perlu diinisialisasi saat dideklarasikan. Nilai variabel late harus diatur sebelum digunakan, dan jika tidak, akan terjadi pengecualian.
+  void lateVariable() {
+    late int lateInt;
+    lateInt = 10; // Inisialisasi nilai lateInt sebelum digunakan
+    print(lateInt);
+  }
 
-  // Null Safety pada Collection:
-  // Dart menyediakan collection non-nullable default, seperti List<int> daripada List<int?> sehingga meminimalkan kemungkinan nilai null dalam collection.
-  // Migration Tools: Dart menyediakan alat migrasi yang membantu mengubah kode lama ke null safety dengan mudah dan aman.
+  // Null-aware Operators: Operator null-aware memudahkan untuk melakukan operasi yang aman ketika bekerja dengan nilai yang mungkin null. Operator ini termasuk ?., ??, dan ??=.
+  void nullaware() {
+    String? maybeNullString;
+    print(maybeNullString?.length);
+    // Aman dari pengecualian jika maybeNullString bernilai null
+    String nonNullableString = maybeNullString ?? "default";
+    // Menggunakan nilai default jika maybeNullString null
+    maybeNullString ??= "new value";
+    // Mengatur nilai baru jika maybeNullString null
+  }
 }
