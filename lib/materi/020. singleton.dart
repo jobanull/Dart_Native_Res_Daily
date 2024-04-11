@@ -1,4 +1,5 @@
-// Singleton : pola desain yang memastikan bahwa sebuah class memiliki hanya satu instance dan menyediakan cara untuk mengaksesnya dari mana saja dalam aplikasi.
+// Singleton.
+// Pengertian : pola desain yang memastikan bahwa sebuah class memiliki hanya satu instance dan menyediakan cara untuk mengaksesnya dari mana saja dalam aplikasi.
 // Kegunaan : Ini berguna ketika Anda ingin memastikan bahwa hanya ada satu instance dari sebuah class yang digunakan secara global dalam aplikasi Anda.
 
 // ignore_for_file: unnecessary_null_comparison

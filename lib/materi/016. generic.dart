@@ -1,4 +1,5 @@
-// Generic type : Mendefinisikan class atau method yang dapat bekerja dengan berbagai jenis data, tanpa harus membatasi jenis data yang digunakan.
+// Generic type.
+// Pengertian : Mendefinisikan class atau method yang dapat bekerja dengan berbagai jenis data, tanpa harus membatasi jenis data yang digunakan.
 // Alasan : Dengan menggunakan generic type, kita dapat menulis kode yang lebih fleksibel, aman, dan reusable.
 // Cara : Deklarasi Generic Type dapat dideklarasikan dengan menggunakan tanda kurung sudut (<>) setelah nama class atau method. Di dalam tanda kurung sudut, Anda dapat menentukan nama jenis parameter (biasanya singkatan T, U, E, dll.) yang akan digunakan untuk menunjukkan jenis data yang berbeda.
 // Penggunaan Generic Type: Setelah mendeklarasikan generic type, Anda dapat menggunakan jenis parameter tersebut untuk mendefinisikan tipe variabel atau parameter dalam class atau method.
