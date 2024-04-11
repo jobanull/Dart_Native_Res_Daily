@@ -2,25 +2,28 @@
 // Pengertian :
 // Krakteristik :
 
-abstract class Shape {}
+// Contoh Abstract Class
 
-class Circle {}
+// Code here..
 
 // Non-Abstract Method.
 // Pengertian :
-abstract class Animals {}
+// Contoh Non Abstract Method
+
+// Code here..
 
 // Interface.
 // Pengertian : Interface mendefinisikan sekumpulan metode dan properti yang harus diimplementasikan oleh kelas-kelas lain yang menggunakan interface tersebut.
 // Karakteristik : Tidak ada kata kunci khusus untuk mendeklarasikan sebuah interface seperti yang ada di beberapa bahasa pemrograman lainnya. Namun, Anda dapat membuat sebuah abstract class yang memiliki semua metode abstrak sehingga mirip dengan sebuah interface.
 
-abstract class CanEat {}
+// Contoh Interface
 
-class Dogs {}
+// Code here..
+
 // Dapat Mengimplementasikan Lebih dari Satu Interface: Class dapat mengimplementasikan lebih dari satu interface, memungkinkan untuk multiple inheritance.
 
-abstract class CanEats {}
+// Contoh Multi Interface
 
-abstract class CanSleep {}
+// Code Here..
 
-class Dogss {}
+void main(List<String> args) {}

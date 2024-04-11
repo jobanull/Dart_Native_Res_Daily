@@ -10,45 +10,20 @@
 // ignore_for_file: unused_local_variable
 
 // Contoh Interitance
-class Extends {
-  void superClassIdentity() {
-    print('This is superclass');
-  }
-}
+class Extends {}
 
-class Child extends Extends {
-  void childIdentity() {
-    print('This is child Class');
-  }
-
-  @override
-  void superClassIdentity() {
-    print('This is child Class override from superclass');
-  }
-}
+class Child extends Extends {}
 
 // is.
 // Pengertian :
 // Karakteristik :
 
-class Is {
-  Extends ext = Child();
-  void main() {
-    if (ext is Child) {
-      ext.superClassIdentity();
-    }
-  }
-}
+class Is {}
 // as.
 // Pengertian :
 // Karakteristik :
 
-class As {
-  Extends ext = Child();
-  void aS() {
-    (ext as Child).childIdentity();
-  }
-}
+class As {}
 
 void main() {
   var inheritance = Extends();
