@@ -29,8 +29,7 @@ class Condition {
 // Aturan :
   void pengkondisianTernary() {
     // 1. Buat rule jika number lebih besar dari 1 maka bernilai positif : negatif
-    var number = 10;
-    String output = (number > 0) ? "Positif" : "Negatif Atau Nol";
+    var output;
     print(output);
   }
 
