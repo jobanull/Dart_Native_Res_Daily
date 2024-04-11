@@ -1,4 +1,5 @@
-// Mixin :  mekanisme yang memungkinkan sebuah class untuk menambahkan fungsionalitas dari class lain tanpa harus meng-extend class tersebut.
+// Mixin.
+// Pengertian :  mekanisme yang memungkinkan sebuah class untuk menambahkan fungsionalitas dari class lain tanpa harus meng-extend class tersebut.
 // Karakteristik : Ini adalah alternatif untuk inheritance (pewarisan), yang memungkinkan komposisi dalam kode, sehingga memungkinkan untuk mendefinisikan dan menggunakan kembali kode dengan lebih fleksibel.
 
 // Beberapa poin penting tentang mixin:

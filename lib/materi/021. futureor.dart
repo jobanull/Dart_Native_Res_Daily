@@ -1,5 +1,6 @@
 import 'dart:async';
-// FutureOr : tipe yang digunakan untuk menunjukkan bahwa nilai dapat berupa sebuah Future atau nilai langsung.
+// FutureOr .
+// Pengertian : tipe yang digunakan untuk menunjukkan bahwa nilai dapat berupa sebuah Future atau nilai langsung.
 // Kegunaan : Ini digunakan secara luas dalam API yang berbasis Future di Dart, terutama untuk menunjukkan bahwa sebuah fungsi dapat mengembalikan baik nilai langsung atau nilai yang akan tersedia di masa depan melalui Future.
 
 // Contoh :

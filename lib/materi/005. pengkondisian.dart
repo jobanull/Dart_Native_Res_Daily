@@ -1,10 +1,12 @@
 import 'dart:io';
 
 class Condition {
-// Pengkondisian : adalah proses di mana sebuah program memilih tindakan atau jalur eksekusi berdasarkan kondisi yang ditentukan.
+// Pengkondisian.
+// Pengertian : adalah proses di mana sebuah program memilih tindakan atau jalur eksekusi berdasarkan kondisi yang ditentukan.
 // Alasannya : Dengan pengkondisian, program dapat melakukan perbandingan nilai atau mengevaluasi ekspresi untuk menentukan tindakan yang tepat untuk diambil.
 
-// Pernyataan if-else: Pernyataan if-else digunakan untuk mengevaluasi kondisi tunggal.
+// if-else.
+// Pengertian : Pernyataan if-else digunakan untuk mengevaluasi kondisi tunggal.
 // Aturan : Jika kondisi yang diberikan bernilai true, maka blok kode di dalam pernyataan if akan dieksekusi. Jika kondisi bernilai false, maka blok kode di dalam pernyataan else (jika ada) yang akan dieksekusi.
   void pengkondisianIfElse() {
     // Value number didapat dari input user
@@ -18,7 +20,8 @@ class Condition {
     }
   }
 
-// Pernyataan else-if: Pernyataan else-if digunakan ketika terdapat lebih dari dua kemungkinan kondisi yang harus dievaluasi.
+// Pernyataan else.
+// Pengertian : Pernyataan else-if digunakan ketika terdapat lebih dari dua kemungkinan kondisi yang harus dievaluasi.
 // Aturan : Setelah pernyataan if awal dievaluasi sebagai false, program akan mengevaluasi kondisi else-if berikutnya secara berurutan hingga menemukan yang benar, atau akan mengeksekusi blok kode else jika tidak ada kondisi yang benar.
   void pengkondisianIfElseIf() {
     String grade;
@@ -36,7 +39,8 @@ class Condition {
     print(grade);
   }
 
-// Ternary Operation: Ternary operation adalah cara singkat untuk menulis pernyataan pengkondisian dalam satu baris.
+// Ternary Operation.
+// Pengertian: Ternary operation adalah cara singkat untuk menulis pernyataan pengkondisian dalam satu baris.
 // Aturan : Terdiri dari sebuah ekspresi, diikuti oleh ?, diikuti oleh ekspresi yang dieksekusi jika kondisi benar, diikuti oleh :, diikuti oleh ekspresi yang dieksekusi jika kondisi salah.
   void pengkondisianTernary() {
     var number;
@@ -47,7 +51,8 @@ class Condition {
     print(output2);
   }
 
-// Pernyataan switch-case: Pernyataan switch-case digunakan ketika terdapat beberapa kemungkinan nilai yang harus dievaluasi.
+// switch-case.
+// Pengertian : Pernyataan switch-case digunakan ketika terdapat beberapa kemungkinan nilai yang harus dievaluasi.
 // Aturan : Program akan mengevaluasi nilai ekspresi dan menjalankan blok kode yang sesuai dengan nilai yang cocok dengan salah satu case, atau menjalankan blok kode di default jika tidak ada nilai yang cocok.
   void pengkondisianSwitch() {
     int bulan = 1;

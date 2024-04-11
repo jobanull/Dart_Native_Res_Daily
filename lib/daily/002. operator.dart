@@ -1,4 +1,4 @@
-// ignore_for_file: dead_code
+// ignore_for_file: dead_code, unused_local_variable
 
 class Operator {
 // Operator, Pengertian :
@@ -9,7 +9,8 @@ class Operator {
     var perkalian;
     var pembagian;
     var modulo;
-    print("$penjumlahan, $pengurangan, $perkalian, $pembagian, $modulo");
+    print(
+        "Penjumlahan $penjumlahan, \nPengurangan $pengurangan, \nPerkalian $perkalian, \nPembagian $pembagian, \nModulo $modulo");
   }
 
 // Operator Penugasan / Assignment, Pengertian :
@@ -26,7 +27,7 @@ class Operator {
 // Operator Perbandingan, Pengertian :
   void perbandingan() {
     // ==, !=, >, <, >=, <=
-    bool perbandingan = 12 == 10 + 3;
+    bool? perbandingan;
     print(perbandingan);
   }
 
@@ -36,29 +37,26 @@ class Operator {
     // || (OR logika)
     // ! (NOT logika)
     var logika;
-    logika = 2 < 7 && 3 < 6;
+    logika;
     print(logika);
   }
 
 // Operator Increment dan Decrement, Pengertian:
   // ++ (increment)
   void inc() {
-    var a = 1;
-    a++;
+    var a;
     print(a);
   }
 
   // -- (decrement)
   void dec() {
-    var a = 5;
-    a--;
+    var a;
     print(a);
   }
 
 // Operator Ternary, Pengertian:
   void ternary() {
-    var isTrue = false;
-    var result = (isTrue) ? "Benar" : "Salah";
+    var result;
     print(result);
   }
 
@@ -66,8 +64,7 @@ class Operator {
   // . (dot)
   // ?. (safe navigation)
   void memAccess() {
-    String? name;
-    print(name?.contains("Joban"));
+    String name;
   }
 }
 
