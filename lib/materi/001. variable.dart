@@ -26,10 +26,11 @@ class Variable {
   }
 
   // Const dan Final
-  // Pengertian : Mendeklarasikan variabel yang nilainya tidak dapat diubah setelah diberikan nilai awal.
+  // Pengertian : Const dan Final adalah keyword yang digunakan untuk mendeklarasikan variabel yang nilainya tidak dapat diubah.
   // Perbedaannya :
-  // Final : Variable ini harus diinisialisasi dengan nilai sebelum digunakan.
-  // Const : Variable konstanta kompilasi yang nilainya harus diketahui ketika kompilasi
+  // Const : nilainya harus sudah diketahui saat compile time.
+  // Final : nilainya bisa diketahui saat compile time atau runtime.
+
   final String name;
   final int age;
   const Variable(this.name, this.age);
