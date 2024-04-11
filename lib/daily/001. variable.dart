@@ -1,7 +1,6 @@
-// Learning Variable
-
 class Variable {
-  // Tipe Data Primitif:
+  // Tipe Data Primitif.
+  // Pengertian :
 
   void dataPrimitif() {
     // Contoh :
@@ -11,7 +10,8 @@ class Variable {
     // print("$integer, $pecahan, $boolean, $text, $numerik");
   }
 
-  // Tipe data non-primitif :
+  // Tipe data non-primitif.
+  // Pengertian :
 
   void dataObjek() {
     // List :

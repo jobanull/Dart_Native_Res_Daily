@@ -1,7 +1,6 @@
-// Learning Variable
-
 class Variable {
-  // Tipe Data Primitif: Tipe data primitif adalah tipe data yang menyimpan nilai tunggal.
+  // Tipe Data Primitif.
+  // Pengertian : Tipe data primitif adalah tipe data yang menyimpan nilai tunggal.
 
   void dataPrimitif() {
     int integer = 20;
@@ -13,8 +12,8 @@ class Variable {
     print("$integer, $pecahan, $boolean, $text, $numerik");
   }
 
-  // Tipe data non-primitif (atau tipe data objek) adalah tipe data yang dapat menyimpan kumpulan nilai atau objek,
-  // dan mereka memiliki metode dan properti yang terkait.
+  // Tipe data non-primitif.
+  // Pengertian : tipe data yang dapat menyimpan kumpulan nilai atau objek, dan mereka memiliki metode dan properti yang terkait.
 
   void dataObjek() {
     // List : untuk menyimpan kumpulan nilai atau objek yang diindeks.
@@ -27,10 +26,11 @@ class Variable {
   }
 
   // Const dan Final
-  // Mendeklarasikan variabel yang nilainya tidak dapat diubah setelah diberikan nilai awal.
+  // Pengertian : Const dan Final adalah keyword yang digunakan untuk mendeklarasikan variabel yang nilainya tidak dapat diubah.
   // Perbedaannya :
-  // Final : Variable ini harus diinisialisasi dengan nilai sebelum digunakan.
-  // Const : Variable konstanta kompilasi yang nilainya harus diketahui ketika kompilasi
+  // Const : nilainya harus sudah diketahui saat compile time.
+  // Final : nilainya bisa diketahui saat compile time atau runtime.
+
   final String name;
   final int age;
   const Variable(this.name, this.age);
