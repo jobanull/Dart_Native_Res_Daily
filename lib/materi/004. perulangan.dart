@@ -10,7 +10,8 @@ class Looping {
     for (int counter = 0; counter < 5; counter = counter + 1) {
       print("Halo World");
     }
-    // Atau
+
+    // Contoh For dengan pengurangan:
     for (int counter = 9; counter >= 1; counter -= 2) {
       print("halo");
     }
@@ -29,7 +30,7 @@ class Looping {
   }
 
   void pengulanganDoWhile() {
-    // Do WHile :
+    // Do While :
     // Pengertian : Mirip dengan while, tetapi pernyataan iterasi dieksekusi setidaknya satu kali sebelum kondisi diperiksa.
     // Cara : Kondisi diperiksa setelah satu iterasi pertama selesai.
     // Cocok untuk : Cocok digunakan ketika Anda ingin menjalankan iterasi minimal satu kali.
@@ -40,30 +41,54 @@ class Looping {
     } while (x < 5);
   }
 
-  // for-in dan forEach :  adalah dua cara yang umum digunakan untuk melakukan iterasi atau pengulangan melalui elemen-elemen dalam sebuah collection seperti List, Set, atau Map.
-  // Perbedaannya :
-  // For in : for-in loop lebih mirip dengan pengulangan tradisional
-  // For Each : forEach method lebih dekat dengan pemrograman fungsional dengan menggunakan fungsi lambda.
+  // For-in dan forEach: Adalah dua cara umum untuk melakukan iterasi melalui elemen-elemen dalam sebuah koleksi seperti List, Set, atau Map.
+  // For-in Loop: Lebih mirip dengan pengulangan tradisional untuk mengakses elemen dalam iterable tanpa variabel penghitung.
+  // forEach: Method yang mendukung pemrograman fungsional, biasanya digunakan dengan fungsi anonim atau lambda.
 
-  // for-in Loop:
-  // Pengertian : Digunakan untuk mengulangi elemen-elemen dari sebuah iterable object seperti list atau set.
-  // Cara : Iterasi dilakukan untuk setiap elemen dalam koleksi.
-  // Cocok untuk : Cocok digunakan ketika Anda ingin mengakses setiap elemen dalam koleksi tanpa memerlukan variabel penghitung iterasi.
   void pengulanganForIn() {
+    // for-in Loop:
+    // Pengertian : Digunakan untuk mengulangi elemen-elemen dari sebuah iterable object seperti list atau set.
+    // Cara : Iterasi dilakukan untuk setiap elemen dalam koleksi.
+    // Cocok untuk : Cocok digunakan ketika Anda ingin mengakses setiap elemen dalam koleksi tanpa memerlukan variabel penghitung iterasi.
     var numbers = [1, 2, 3, 4, 5];
     for (var number in numbers) {
       print(number);
     }
   }
-  // 2. forEach Method:
-  // Pengertian : Sama dengan for-in, tetapi lebih pendek dan ekspresif.
-  // Cara : Biasanya digunakan untuk memanggil fungsi callback atau metode untuk setiap elemen dalam koleksi.
-  // Cocok untuk : Cocok digunakan untuk mengiterasi koleksi dan melakukan tugas pada setiap elemennya dengan sintaks yang lebih ringkas.
 
   void pengulanganForEach() {
+    // forEach Method:
+    // Pengertian : Sama dengan for-in, tetapi lebih pendek dan ekspresif.
+    // Cara : Biasanya digunakan untuk memanggil fungsi callback atau metode untuk setiap elemen dalam koleksi.
+    // Cocok untuk : Cocok digunakan untuk mengiterasi koleksi dan melakukan tugas pada setiap elemennya dengan sintaks yang lebih ringkas.
     var numbers = [1, 2, 3, 4, 5];
     numbers.forEach((number) {
       print(number);
     });
   }
+}
+
+// Contoh eksekusi program
+void main() {
+  Looping looping = Looping();
+
+  // Pengulangan For
+  print("Pengulangan For:");
+  looping.pengulanganFor();
+
+  // Pengulangan While
+  print("\nPengulangan While:");
+  looping.pengulanganWhile();
+
+  // Pengulangan Do While
+  print("\nPengulangan Do While:");
+  looping.pengulanganDoWhile();
+
+  // Pengulangan For In
+  print("\nPengulangan For-in:");
+  looping.pengulanganForIn();
+
+  // Pengulangan ForEach
+  print("\nPengulangan ForEach:");
+  looping.pengulanganForEach();
 }
